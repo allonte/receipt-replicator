@@ -13,7 +13,7 @@ const receiptData = {
   terminal: "POS40310",
   agent: "POSAG037988",
   accountHolder: "Wilson Kinyanjui Murong'a",
-  address: ["495- Karuri[]", "JUJA", "001"],
+  address: ["495- Karuri[]", "Nairobi cbd", "001"],
   cardNumber: "603120******4164",
   expiry: "02/27",
   date: dateStr,

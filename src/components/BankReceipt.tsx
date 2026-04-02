@@ -45,7 +45,7 @@ const BankReceipt = ({ data }: { data: ReceiptData }) => {
           <img src={coopLogo} alt="Co-op Bank" className="w-6 h-6 object-contain brightness-0 mt-0.5" />
           <div className="text-center flex-1">
             <p className="font-bold text-[11px] tracking-wide">{data.bankName}</p>
-            <p className="text-[hsl(var(--receipt-muted))] text-[8px] italic leading-tight">on the go</p>
+            <p className="text-[hsl(var(--receipt-muted))] text-[8px] italic leading-tight">we are you</p>
           </div>
         </div>
 
