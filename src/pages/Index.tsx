@@ -6,7 +6,7 @@ import { useRef } from "react";
 const today = new Date();
 const pad = (n: number) => String(n).padStart(2, "0");
 const dateStr = `${pad(today.getMonth() + 1)}/${pad(today.getDate())}/${String(today.getFullYear()).slice(2)}`;
-const timeStr = `${pad(today.getHours())}:${pad(today.getMinutes())}:${pad(today.getSeconds())}`;
+const timeStr = "11:30:00";
 
 const receiptData = {
   bankName: "CO-OPERATIVE BANK",
