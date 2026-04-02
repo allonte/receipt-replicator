@@ -6,14 +6,14 @@ import { useRef } from "react";
 const today = new Date();
 const pad = (n: number) => String(n).padStart(2, "0");
 const dateStr = `${pad(today.getMonth() + 1)}/${pad(today.getDate())}/${String(today.getFullYear()).slice(2)}`;
-const timeStr = `${pad(today.getHours())}:${pad(today.getMinutes())}:${pad(today.getSeconds())}`;
+const timeStr = "11:30:00";
 
 const receiptData = {
   bankName: "CO-OPERATIVE BANK",
   terminal: "POS40310",
   agent: "POSAG037988",
   accountHolder: "Wilson Kinyanjui Murong'a",
-  address: ["495- Karuri[]", "JUJA", "001"],
+  address: ["495- Karuri[]", "Nairobi cbd", "001"],
   cardNumber: "603120******4164",
   expiry: "02/27",
   date: dateStr,
