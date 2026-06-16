@@ -109,7 +109,7 @@ export function NyotaSectors() {
                 <div className="absolute -inset-3 rounded-2xl border border-primary/10 -rotate-1" />
                 <img
                   src={founderPhoto}
-                  alt="Founder of Nyota AI"
+                  alt="Founder of all&co"
                   className="relative w-72 h-96 object-cover rounded-2xl shadow-2xl"
                 />
                 {/* Floating badge */}
