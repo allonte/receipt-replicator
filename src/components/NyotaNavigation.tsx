@@ -1,14 +1,14 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import nyotaLogo from '@/assets/nyota-logo.png'
 
-const navItems = [
+const scrollItems = [
   { label: 'Home', id: 'home' },
   { label: 'About', id: 'about' },
   { label: 'Services', id: 'services' },
   { label: 'Custom Software', id: 'custom-software' },
   { label: 'Packages', id: 'packages' },
-  { label: 'E-Commerce', id: 'ecommerce' },
   { label: 'Contact', id: 'contact' },
 ]
 
@@ -28,15 +28,17 @@ export function NyotaNavigation() {
       <div className="relative container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <img 
-            src={nyotaLogo} 
-            alt="all&co" 
-            className="h-10 w-auto brightness-0 invert"
-          />
+          <Link to="/">
+            <img 
+              src={nyotaLogo} 
+              alt="all&co" 
+              className="h-10 w-auto brightness-0 invert"
+            />
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
+            {scrollItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleScroll(item.id)}
@@ -45,6 +47,12 @@ export function NyotaNavigation() {
                 {item.label}
               </button>
             ))}
+            <Link
+              to="/ecommerce"
+              className="text-sm font-medium text-white/80 hover:text-white transition-colors"
+            >
+              E-Commerce
+            </Link>
           </div>
 
           {/* CTA Button */}
@@ -69,7 +77,7 @@ export function NyotaNavigation() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden pb-4 space-y-1 bg-black/80 backdrop-blur-md rounded-xl mt-1 px-2">
-            {navItems.map((item) => (
+            {scrollItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleScroll(item.id)}
@@ -78,6 +86,13 @@ export function NyotaNavigation() {
                 {item.label}
               </button>
             ))}
+            <Link
+              to="/ecommerce"
+              onClick={() => setIsOpen(false)}
+              className="block w-full text-left px-4 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+            >
+              E-Commerce
+            </Link>
           </div>
         )}
       </div>
