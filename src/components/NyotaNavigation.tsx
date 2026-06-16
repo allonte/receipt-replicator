@@ -8,6 +8,7 @@ const navItems = [
   { label: 'Services', id: 'services' },
   { label: 'Custom Software', id: 'custom-software' },
   { label: 'Packages', id: 'packages' },
+  { label: 'E-Commerce', id: 'ecommerce' },
   { label: 'Contact', id: 'contact' },
 ]
 
