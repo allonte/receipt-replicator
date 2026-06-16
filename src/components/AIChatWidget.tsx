@@ -10,7 +10,7 @@ const CHAT_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/ai-chat`
 export function AIChatWidget() {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Msg[]>([
-    { role: 'assistant', content: "Hi! 👋 I'm the Nyota AI assistant. How can I help you explore our AI solutions for your business?" }
+    { role: 'assistant', content: "Hi! 👋 I'm the all&co assistant. How can I help you explore our AI solutions for your business?" }
   ])
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -141,8 +141,8 @@ export function AIChatWidget() {
               <div className="w-9 h-9 rounded-full bg-foreground/10 flex items-center justify-center">
                 <Bot className="w-5 h-5 text-foreground" />
               </div>
-              <div>
-                <div className="font-heading font-semibold text-sm text-foreground">Nyota AI Assistant</div>
+                <div>
+                <div className="font-heading font-semibold text-sm text-foreground">all&co Assistant</div>
                 <div className="text-xs text-muted-foreground">Powered by AI</div>
               </div>
             </div>

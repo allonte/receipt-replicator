@@ -30,6 +30,26 @@ export default function App() {
         <section id="packages" aria-label="Pricing packages">
           <NyotaPackages />
         </section>
+        <section id="ecommerce" aria-label="E-Commerce section">
+          <div className="py-24 bg-card/50">
+            <div className="container mx-auto px-6 lg:px-12 text-center mb-10">
+              <h2 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-4">
+                E-Commerce
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Browse our store directly below — no need to leave the site.
+              </p>
+            </div>
+            <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+              <iframe
+                src="https://iphoneplaystationwebsite.vercel.app/"
+                title="E-Commerce Store"
+                className="w-full h-[80vh] rounded-xl border border-border bg-white"
+                allow="fullscreen"
+              />
+            </div>
+          </div>
+        </section>
         <section id="contact" aria-label="Contact section">
           <NyotaContact />
         </section>

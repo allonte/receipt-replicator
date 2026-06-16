@@ -8,6 +8,7 @@ const navItems = [
   { label: 'Services', id: 'services' },
   { label: 'Custom Software', id: 'custom-software' },
   { label: 'Packages', id: 'packages' },
+  { label: 'E-Commerce', id: 'ecommerce' },
   { label: 'Contact', id: 'contact' },
 ]
 
@@ -29,7 +30,7 @@ export function NyotaNavigation() {
           {/* Logo */}
           <img 
             src={nyotaLogo} 
-            alt="Nyota AI" 
+            alt="all&co" 
             className="h-10 w-auto brightness-0 invert"
           />
 

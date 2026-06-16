@@ -109,7 +109,7 @@ export function NyotaSectors() {
                 <div className="absolute -inset-3 rounded-2xl border border-primary/10 -rotate-1" />
                 <img
                   src={founderPhoto}
-                  alt="Founder of Nyota AI"
+                  alt="Founder of all&co"
                   className="relative w-72 h-96 object-cover rounded-2xl shadow-2xl"
                 />
                 {/* Floating badge */}
@@ -143,7 +143,7 @@ export function NyotaSectors() {
                 </div>
               </div>
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                Nyota AI is an AI consultancy headquartered in Nairobi, Kenya. We build practical,
+                all&co is an AI consultancy headquartered in Nairobi, Kenya. We build practical,
                 real-world AI systems for African businesses — from chatbots and automation to
                 custom dashboards and intelligent workflows.
               </p>
