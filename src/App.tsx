@@ -31,22 +31,26 @@ export default function App() {
           <NyotaPackages />
         </section>
         <section id="ecommerce" aria-label="E-Commerce section">
-          <div className="py-24 bg-card/50">
-            <div className="container mx-auto px-6 lg:px-12 text-center mb-10">
-              <h2 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-4">
+          <div className="py-16 md:py-24 bg-card/50">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 text-center mb-8 md:mb-10">
+              <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
                 E-Commerce
               </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+              <p className="text-muted-foreground max-w-2xl mx-auto text-base md:text-lg">
                 Browse our store directly below — no need to leave the site.
               </p>
             </div>
-            <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-              <iframe
-                src="https://iphoneplaystationwebsite.vercel.app/"
-                title="E-Commerce Store"
-                className="w-full h-[80vh] rounded-xl border border-border bg-white"
-                allow="fullscreen"
-              />
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-6xl">
+              <div className="relative w-full overflow-hidden rounded-xl border border-border bg-white">
+                <iframe
+                  src="https://iphoneplaystationwebsite.vercel.app/"
+                  title="E-Commerce Store"
+                  className="w-full block"
+                  style={{ height: 'clamp(420px, 70vh, 800px)', border: 'none' }}
+                  allow="fullscreen"
+                  scrolling="no"
+                />
+              </div>
             </div>
           </div>
         </section>
