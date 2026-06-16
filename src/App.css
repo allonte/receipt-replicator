@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.duration-1000 {
+  animation-duration: unset;
+  --tw-duration: 1s;
+    transition-duration: 1s;
+}

@@ -1,27 +1,41 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import Index from "./pages/Index.tsx";
-import NotFound from "./pages/NotFound.tsx";
+import { NyotaNavigation } from './components/NyotaNavigation'
+import { NyotaHero } from './components/NyotaHero'
+import { NyotaClients } from './components/NyotaClients'
+import { NyotaServices } from './components/NyotaServices'
+import { NyotaSectors } from './components/NyotaSectors'
+import { NyotaCustomSoftware } from './components/NyotaCustomSoftware'
+import { NyotaPackages } from './components/NyotaPackages'
+import { NyotaContact } from './components/NyotaContact'
+import { NyotaFooter } from './components/NyotaFooter'
+import { AIChatWidget } from './components/AIChatWidget'
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
-
-export default App;
+export default function App() {
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <NyotaNavigation />
+      <main className="relative" role="main">
+        <section id="home" aria-label="Hero section">
+          <NyotaHero />
+        </section>
+        <NyotaClients />
+        <section id="about" aria-label="Industry sectors">
+          <NyotaSectors />
+        </section>
+        <section id="services" aria-label="Services section">
+          <NyotaServices />
+        </section>
+        <section id="custom-software" aria-label="Custom software section">
+          <NyotaCustomSoftware />
+        </section>
+        <section id="packages" aria-label="Pricing packages">
+          <NyotaPackages />
+        </section>
+        <section id="contact" aria-label="Contact section">
+          <NyotaContact />
+        </section>
+      </main>
+      <NyotaFooter />
+      <AIChatWidget />
+    </div>
+  )
+}
