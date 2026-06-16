@@ -29,7 +29,7 @@ export function NyotaNavigation() {
           {/* Logo */}
           <img 
             src={nyotaLogo} 
-            alt="Nyota AI" 
+            alt="all&co" 
             className="h-10 w-auto brightness-0 invert"
           />
 

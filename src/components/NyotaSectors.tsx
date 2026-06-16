@@ -143,7 +143,7 @@ export function NyotaSectors() {
                 </div>
               </div>
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                Nyota AI is an AI consultancy headquartered in Nairobi, Kenya. We build practical,
+                all&co is an AI consultancy headquartered in Nairobi, Kenya. We build practical,
                 real-world AI systems for African businesses — from chatbots and automation to
                 custom dashboards and intelligent workflows.
               </p>
