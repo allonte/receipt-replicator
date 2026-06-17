@@ -3,9 +3,8 @@ import { NyotaNavigation } from './components/NyotaNavigation'
 import { NyotaHero } from './components/NyotaHero'
 import { NyotaClients } from './components/NyotaClients'
 import { NyotaServices } from './components/NyotaServices'
-import { NyotaSectors } from './components/NyotaSectors'
 import { NyotaCustomSoftware } from './components/NyotaCustomSoftware'
-import { NyotaPackages } from './components/NyotaPackages'
+import { EcommerceCTA } from './components/EcommerceCTA'
 import { NyotaContact } from './components/NyotaContact'
 import { NyotaFooter } from './components/NyotaFooter'
 import { AIChatWidget } from './components/AIChatWidget'
@@ -20,17 +19,14 @@ function HomePage() {
           <NyotaHero />
         </section>
         <NyotaClients />
-        <section id="about" aria-label="Industry sectors">
-          <NyotaSectors />
+        <section id="shop" aria-label="E-Commerce store">
+          <EcommerceCTA />
         </section>
         <section id="services" aria-label="Services section">
           <NyotaServices />
         </section>
         <section id="custom-software" aria-label="Custom software section">
           <NyotaCustomSoftware />
-        </section>
-        <section id="packages" aria-label="Pricing packages">
-          <NyotaPackages />
         </section>
         <section id="contact" aria-label="Contact section">
           <NyotaContact />
