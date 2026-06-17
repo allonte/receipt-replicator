@@ -3,6 +3,44 @@ import { GraduationCap, HardHat, HeartPulse, Hotel, Landmark, MapPin, ShoppingBa
 import { KenyaCountiesMap } from './KenyaCountiesMap'
 import founderPhoto from '@/assets/founder-photo.jpeg'
 
+const sectors = [
+  {
+    icon: HeartPulse,
+    title: 'Healthcare',
+    items: ['Appointment bots', 'Patient triage chatbots', 'AI summaries for doctors', 'Records management'],
+  },
+  {
+    icon: HardHat,
+    title: 'Construction & Engineering',
+    items: ['AI for hire equipment tracking', 'Project forecasting', 'Site management reports', 'Delivery notes & stock reconciliation'],
+  },
+  {
+    icon: GraduationCap,
+    title: 'Education & Training',
+    items: ['AI tutoring assistants', 'Learner progress analytics', 'Admissions query automation', 'Course content personalization'],
+  },
+  {
+    icon: Landmark,
+    title: 'Financial Services',
+    items: ['Fraud detection support', 'Automated compliance checks', 'Loan pre-screening assistants', 'Customer risk insights'],
+  },
+  {
+    icon: Hotel,
+    title: 'Hospitality',
+    items: ['AI booking assistants', 'POS recommendations', 'Customer feedback analysis', 'Revenue optimization'],
+  },
+  {
+    icon: Truck,
+    title: 'Logistics',
+    items: ['Route optimization', 'AI delivery tracking', 'Document processing', 'Fleet management insights'],
+  },
+  {
+    icon: ShoppingBag,
+    title: 'Retail & E-Commerce',
+    items: ['Demand forecasting', 'AI product recommendations', 'Customer support automation', 'Inventory planning insights'],
+  },
+]
+
 export function NyotaSectors() {
   return (
     <div className="py-24 bg-background">
