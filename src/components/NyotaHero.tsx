@@ -37,12 +37,12 @@ export function NyotaHero() {
           transition={{ duration: 0.65, delay: 0.1 }}
           className="font-heading text-4xl sm:text-5xl xl:text-6xl font-bold leading-[1.1] tracking-tight text-slate-100 mb-6 max-w-3xl"
         >
-          We help businesses
+          Shop top devices.
           <br />
-          adopt AI to{' '}
-          <span className="italic text-primary">automate,</span>
+          Build smart{' '}
+          <span className="italic text-primary">software.</span>
           <br />
-          <span className="italic text-primary">cut costs,</span> and scale.
+          One <span className="italic text-primary">all&co</span> home.
         </motion.h1>
 
         {/* Sub-copy */}
@@ -52,8 +52,8 @@ export function NyotaHero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-sm sm:text-base text-slate-400 leading-relaxed mb-10 max-w-md"
         >
-          From intelligent chatbots to custom dashboards — practical AI
-          systems built for the real world, tailored to African businesses.
+          Browse our e-commerce store for iPhones, PlayStations and more — or
+          explore the custom software we build for businesses across Africa.
         </motion.p>
 
         {/* CTAs */}
@@ -63,18 +63,18 @@ export function NyotaHero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-start sm:items-center gap-3"
         >
-          <button
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="inline-flex items-center gap-2 bg-white text-black hover:bg-white/90 transition-colors px-7 py-3.5 rounded-full text-sm font-semibold shadow-md"
+          <a
+            href="/ecommerce"
+            className="inline-flex items-center gap-2 bg-white text-black hover:bg-white/90 transition-colors px-7 py-3.5 rounded-full text-sm font-semibold shadow-md"
           >
-            Book a Free Consultation
+            Shop the Store
             <ArrowUpRight className="w-4 h-4" />
-          </button>
+          </a>
           <button
-            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('custom-software')?.scrollIntoView({ behavior: 'smooth' })}
             className="inline-flex items-center gap-2 border border-slate-400/40 text-slate-200 hover:bg-white/10 transition-colors px-7 py-3.5 rounded-full text-sm font-semibold"
           >
-            See Our Services
+            See Our Software
           </button>
         </motion.div>
 

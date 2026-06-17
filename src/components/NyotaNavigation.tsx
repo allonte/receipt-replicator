@@ -5,10 +5,9 @@ import nyotaLogo from '@/assets/nyota-logo.png'
 
 const scrollItems = [
   { label: 'Home', id: 'home' },
-  { label: 'About', id: 'about' },
+  { label: 'Shop', id: 'shop' },
   { label: 'Services', id: 'services' },
   { label: 'Custom Software', id: 'custom-software' },
-  { label: 'Packages', id: 'packages' },
   { label: 'Contact', id: 'contact' },
 ]
 
