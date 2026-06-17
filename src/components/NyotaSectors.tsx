@@ -159,56 +159,6 @@ export function NyotaSectors() {
           </div>
         </div>
 
-        {/* Skills Section */}
-        <div className="max-w-6xl mx-auto mb-24">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Expertise</span>
-            <h2 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mt-3 mb-4">
-              Technical Skills
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Deep expertise spanning Computer Science and Telecommunication Engineering.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-            {skillGroups.map((group, i) => (
-              <motion.div
-                key={group.category}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.07 }}
-                className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center gap-3 mb-5">
-                  <div className={`w-11 h-11 rounded-xl ${group.bg} flex items-center justify-center`}>
-                    <group.icon className={`w-6 h-6 ${group.color}`} />
-                  </div>
-                  <h3 className="font-heading text-base font-semibold text-foreground">{group.category}</h3>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {group.skills.map((skill) => (
-                    <span
-                      key={skill}
-                      className="text-xs font-medium px-2.5 py-1 rounded-full bg-muted text-muted-foreground border border-border"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
-        {/* Sectors */}
         <div className="text-center mb-16">
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">Industries</span>
           <h2 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mt-3 mb-4">
