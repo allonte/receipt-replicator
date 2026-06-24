@@ -44,13 +44,15 @@ export function EcommerceCTA() {
               ))}
             </div>
 
-            <Link
-              to="/ecommerce"
+            <a
+              href="https://www.allco.co.ke/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors px-7 py-3.5 rounded-full text-sm font-semibold shadow-md"
             >
               Enter the Store
               <ArrowUpRight className="w-4 h-4" />
-            </Link>
+            </a>
           </div>
         </motion.div>
       </div>

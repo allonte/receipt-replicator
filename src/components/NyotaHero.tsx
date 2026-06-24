@@ -64,7 +64,9 @@ export function NyotaHero() {
           className="flex flex-col sm:flex-row items-start sm:items-center gap-3"
         >
           <a
-            href="/ecommerce"
+            href="https://www.allco.co.ke/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-black hover:bg-white/90 transition-colors px-7 py-3.5 rounded-full text-sm font-semibold shadow-md"
           >
             Shop the Store
