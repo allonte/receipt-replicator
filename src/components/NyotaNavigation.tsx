@@ -84,13 +84,15 @@ export function NyotaNavigation() {
                 {item.label}
               </button>
             ))}
-            <Link
-              to="/ecommerce"
+            <a
+              href="https://www.allco.co.ke/"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="block w-full text-left px-4 py-3 text-sm font-medium text-foreground/80 hover:text-foreground hover:bg-muted rounded-lg transition-colors"
             >
               E-Commerce
-            </Link>
+            </a>
           </div>
         )}
       </div>
