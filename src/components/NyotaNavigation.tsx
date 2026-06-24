@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
-import nyotaLogo from '@/assets/nyota-logo.png'
+import allcoLogo from '@/assets/allco-logo.png'
 
 const scrollItems = [
   { label: 'Home', id: 'home' },
@@ -20,18 +20,15 @@ export function NyotaNavigation() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50">
-      {/* Gradient fade so text is always readable over the hero image */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent pointer-events-none" />
-
-      <div className="relative container mx-auto px-6 lg:px-12">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border/50">
+      <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/">
-            <img 
-              src={nyotaLogo} 
-              alt="all&co" 
-              className="h-10 w-auto brightness-0 invert"
+            <img
+              src={allcoLogo}
+              alt="all&co"
+              className="h-10 w-auto"
             />
           </Link>
 
@@ -41,14 +38,14 @@ export function NyotaNavigation() {
               <button
                 key={item.id}
                 onClick={() => handleScroll(item.id)}
-                className="text-sm font-medium text-white/80 hover:text-white transition-colors"
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
               >
                 {item.label}
               </button>
             ))}
             <Link
               to="/ecommerce"
-              className="text-sm font-medium text-white/80 hover:text-white transition-colors"
+              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
             >
               E-Commerce
             </Link>
@@ -58,7 +55,7 @@ export function NyotaNavigation() {
           <div className="hidden md:block">
             <button
               onClick={() => handleScroll('contact')}
-              className="text-sm font-semibold bg-white/15 hover:bg-white/25 text-white border border-white/30 px-5 py-2 rounded-full transition-colors backdrop-blur-sm"
+              className="text-sm font-semibold bg-foreground hover:bg-foreground/90 text-background px-5 py-2 rounded-full transition-colors"
             >
               Book a Call
             </button>
@@ -66,7 +63,7 @@ export function NyotaNavigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-foreground"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -75,12 +72,12 @@ export function NyotaNavigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pb-4 space-y-1 bg-black/80 backdrop-blur-md rounded-xl mt-1 px-2">
+          <div className="md:hidden pb-4 space-y-1 bg-white border border-border rounded-xl mt-1 px-2 shadow-lg">
             {scrollItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleScroll(item.id)}
-                className="block w-full text-left px-4 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+                className="block w-full text-left px-4 py-3 text-sm font-medium text-foreground/80 hover:text-foreground hover:bg-muted rounded-lg transition-colors"
               >
                 {item.label}
               </button>
@@ -88,7 +85,7 @@ export function NyotaNavigation() {
             <Link
               to="/ecommerce"
               onClick={() => setIsOpen(false)}
-              className="block w-full text-left px-4 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+              className="block w-full text-left px-4 py-3 text-sm font-medium text-foreground/80 hover:text-foreground hover:bg-muted rounded-lg transition-colors"
             >
               E-Commerce
             </Link>
