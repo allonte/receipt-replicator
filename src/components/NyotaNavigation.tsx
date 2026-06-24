@@ -43,12 +43,14 @@ export function NyotaNavigation() {
                 {item.label}
               </button>
             ))}
-            <Link
-              to="/ecommerce"
+            <a
+              href="https://www.allco.co.ke/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
             >
               E-Commerce
-            </Link>
+            </a>
           </div>
 
           {/* CTA Button */}
