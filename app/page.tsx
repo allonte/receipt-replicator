@@ -264,25 +264,45 @@ export default function AllAndCoPage() {
               <div className="w-10 h-10 rounded-xl border border-black/10 flex items-center justify-center mb-5">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
               </div>
-              <h3 className="text-lg font-light mb-2">Real-time Monitoring</h3>
-              <p className="text-sm text-black/45 leading-relaxed">Trace every decision. Debug with full execution history and live logs.</p>
+              <h3 className="text-lg font-light mb-2">Custom Systems & AI Workflows</h3>
+              <p className="text-sm text-black/45 leading-relaxed">I design and ship production-grade systems — automations, agents, and end-to-end AI workflows tailored to your business.</p>
             </BentoCard>
 
-            <BentoCard className="col-span-12 md:col-span-4 p-8 min-h-[200px]" delay={160}>
-              <div className="w-10 h-10 rounded-xl border border-black/10 flex items-center justify-center mb-5">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10h8M8 14h5"/></svg>
-              </div>
-              <h3 className="text-lg font-light mb-2">Memory & Context</h3>
-              <p className="text-sm text-black/45 leading-relaxed">Persistent long-term memory across sessions. Agents learn from every interaction.</p>
-            </BentoCard>
+            <a
+              href="https://www.allco.co.ke/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="col-span-12 md:col-span-4 block group"
+            >
+              <BentoCard className="p-8 min-h-[200px] h-full hover:border-black/20 transition-colors" delay={160}>
+                <div className="w-10 h-10 rounded-xl border border-black/10 flex items-center justify-center mb-5">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <div className="flex items-center gap-2 mb-2">
+                  <h3 className="text-lg font-light">all&amp;co Marketplace</h3>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-black/40 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </div>
+                <p className="text-sm text-black/45 leading-relaxed">Kenya's biggest gadget marketplace — iPhones, PlayStation, laptops and accessories. Visit allco.co.ke.</p>
+              </BentoCard>
+            </a>
 
-            <BentoCard className="col-span-12 md:col-span-4 p-8 min-h-[200px]" delay={200}>
-              <div className="w-10 h-10 rounded-xl border border-black/10 flex items-center justify-center mb-5">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <h3 className="text-lg font-light mb-2">Guardrails & Permissions</h3>
-              <p className="text-sm text-black/45 leading-relaxed">Define what agents can and cannot do. Fine-grained access control per tool.</p>
-            </BentoCard>
+            <a
+              href="https://motion.allco.co.ke/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="col-span-12 md:col-span-4 block group"
+            >
+              <BentoCard className="p-8 min-h-[200px] h-full hover:border-black/20 transition-colors" delay={200}>
+                <div className="w-10 h-10 rounded-xl border border-black/10 flex items-center justify-center mb-5">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                </div>
+                <div className="flex items-center gap-2 mb-2">
+                  <h3 className="text-lg font-light">Motion — AI Video Generator</h3>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-black/40 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </div>
+                <p className="text-sm text-black/45 leading-relaxed">Preview motion.allco.co.ke — generate cinematic videos from a single prompt. Currently in preview.</p>
+              </BentoCard>
+            </a>
           </div>
         </div>
       </section>
