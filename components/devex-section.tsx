@@ -149,8 +149,8 @@ export function DevExSection() {
           <div className="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/[0.05] border border-black/[0.06] text-[10px] tracking-widest text-black/40 uppercase">
             Developer Experience
           </div>
-          <h2 className="mt-5 text-4xl md:text-5xl font-light tracking-tight leading-[1.05]">
-            Built for developers.<br />Loved by teams.
+          <h2 className="mt-5 text-2xl md:text-3xl font-light tracking-tight leading-[1.05]">
+            Built for clients
           </h2>
         </div>
 
