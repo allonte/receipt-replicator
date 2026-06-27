@@ -580,74 +580,27 @@ export default function AllAndCoPage() {
         </div>
       </section>
 
-      {/* ── PRICING ───────────────────────────────────���────������─────────────── */}
+      {/* ── PRICING ───────────────────────────────────────────────────────── */}
       <section id="pricing" className="py-32 px-6 md:px-12 lg:px-20 border-t border-black/[0.06]">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16 flex flex-col items-center">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="mb-10 flex flex-col items-center">
             <PixelIcon type="pricing" size={40} />
             <div className="mt-4"><Tag>PRICING</Tag></div>
             <RevealText className="mt-5 text-4xl md:text-5xl font-light tracking-tight leading-[1.05]">
-              {"Pay as your agents grow."}
+              {"Pay as your software grows."}
             </RevealText>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3" onMouseMove={handleMouse}>
-            {[
-              {
-                name: "Sandbox",
-                price: "Free",
-                sub: "Start experimenting",
-                features: ["5 agents", "1,000 tasks/mo", "Community support", "Basic traces"],
-                delay: 0,
-              },
-              {
-                name: "Builder",
-                price: "$49",
-                period: "/mo",
-                sub: "For teams shipping fast",
-                features: ["50 agents", "100K tasks/mo", "Priority support", "Full traces + replay", "Custom tools", "REST API"],
-                highlight: true,
-                delay: 80,
-              },
-              {
-                name: "Enterprise",
-                price: "Custom",
-                sub: "For orgs at scale",
-                features: ["Unlimited agents", "Unlimited tasks", "Dedicated infra", "SOC 2 / HIPAA", "SLA guarantees", "Custom contracts"],
-                delay: 140,
-              },
-            ].map((plan) => (
-              <BentoCard
-                key={plan.name}
-                className={`p-8 flex flex-col ${plan.highlight ? "border-black/20 bg-[#F0EEE8]" : ""}`}
-                delay={plan.delay}
-              >
-                <div className="mb-8">
-                  <div className="font-pixel text-[11px] tracking-widest text-black/40 mb-4">{plan.name}</div>
-                  <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-4xl font-light">{plan.price}</span>
-                    {plan.period && <span className="text-black/40 text-sm">{plan.period}</span>}
-                  </div>
-                  <p className="text-xs text-black/35 tracking-wide">{plan.sub}</p>
-                </div>
-                <ul className="space-y-3 flex-1 mb-8">
-                  {plan.features.map(f => (
-                    <li key={f} className="flex items-center gap-3 text-sm text-black/55">
-                      <div className="w-1 h-1 rounded-full bg-black/25 shrink-0" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-                <button className={`w-full py-3 rounded-xl text-sm tracking-widest transition-all duration-200 ${
-                  plan.highlight
-                    ? "bg-[#111] text-white hover:bg-[#333]"
-                    : "border border-black/10 text-black/60 hover:border-black/25 hover:text-black hover:bg-black/[0.04]"
-                }`}>
-                  {plan.name === "Enterprise" ? "CONTACT SALES" : "GET STARTED"}
-                </button>
-              </BentoCard>
-            ))}
-          </div>
+          <p className="text-sm text-black/45 leading-relaxed mb-8 max-w-md mx-auto">
+            Every project is different. Whether you need a landing page, a full-stack platform, or an AI workflow, I will scope it and quote it for you directly.
+          </p>
+          <a
+            href="mailto:allankaoga1@gmail.com"
+            className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#111] text-white text-sm rounded-xl hover:bg-[#333] transition-colors tracking-widest font-medium"
+          >
+            EMAIL FOR A QUOTE
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <p className="mt-4 text-xs text-black/30">allankaoga1@gmail.com</p>
         </div>
       </section>
 
