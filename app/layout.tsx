@@ -12,38 +12,30 @@ const _ibmPlexSans = IBM_Plex_Sans({ weight: ["300", "400", "500", "600"], subse
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: 'all&co — Autonomous AI Agents at Scale',
-  description: 'Deploy autonomous AI agents that think, act, and execute across any workflow. Connect 200+ integrations, run agents in parallel, and ship faster with the all&co platform.',
-  keywords: ['AI agents', 'autonomous agents', 'LLM orchestration', 'AI automation', 'multi-agent platform'],
+  title: 'all&co — Custom Software & AI Workflows',
+  description: 'From idea to running software. all&co builds custom systems, automations, and AI workflows for businesses. Kenya\'s trusted development partner.',
+  keywords: ['custom software', 'AI workflows', 'software development', 'automation', 'all&co'],
   authors: [{ name: 'all&co' }],
   openGraph: {
-    title: 'all&co — Autonomous AI Agents at Scale',
-    description: 'Deploy autonomous AI agents that think, act, and execute across any workflow.',
+    title: 'all&co — Custom Software & AI Workflows',
+    description: 'From idea to running software. all&co builds custom systems, automations, and AI workflows for businesses.',
     type: 'website',
-    url: 'https://allandco.ai',
+    url: 'https://ai.allco.co.ke',
     siteName: 'all&co',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'all&co — Autonomous AI Agents at Scale',
-    description: 'Deploy autonomous AI agents that think, act, and execute across any workflow.',
+    title: 'all&co — Custom Software & AI Workflows',
+    description: 'From idea to running software. all&co builds custom systems, automations, and AI workflows for businesses.',
   },
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/allandco-logo.png',
+        type: 'image/png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/allandco-logo.png',
   },
 }
 
