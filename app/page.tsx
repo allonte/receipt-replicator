@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useRef, useEffect, useState, useCallback } from "react"
-import { IntroAnimation, INTRO_DURATION_MS, HERO_REVEAL_MS } from "@/components/intro-animation"
+import { IntroAnimation, HERO_REVEAL_MS } from "@/components/intro-animation"
 import { AgentInterface } from "@/components/agent-interface"
 import { PixelIcon } from "@/components/pixel-icon"
 import { LiveAgentFeed, LiveAgentCounter } from "@/components/live-agent-feed"
@@ -117,7 +117,9 @@ export default function AllAndCoPage() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover z-0"
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/agentic-hero-9yW3wnTNMfn2U6lsVhTTZSJFEvAoSj.mp4"
+          aria-label="Iridescent glass blocks background for the custom software landing page"
+          src="/allandco-marketing.mp4"
+          poster="/images/arc.png"
           style={{
             transform: videoReady ? "scale(1.05)" : "scale(0.85)",
             transition: "transform 2s cubic-bezier(0.16, 1, 0.3, 1)",
