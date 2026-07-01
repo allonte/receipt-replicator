@@ -683,7 +683,7 @@ export default function AllAndCoPage() {
           <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
             {[
               { label: "Platform",     href: "#platform" },
-              { label: "Agents",       href: "#agents" },
+              { label: "Systems",      href: "#agents" },
               { label: "Workflow",     href: "#workflow" },
               { label: "Integrations", href: "#integrations" },
               { label: "Live",         href: "#live" },
