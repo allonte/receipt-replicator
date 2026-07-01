@@ -80,15 +80,8 @@ export default function AllAndCoPage() {
   const [email, setEmail] = useState("")
   const [submitted, setSubmitted] = useState(false)
   const [heroReady, setHeroReady] = useState(false)
-  const [videoReady, setVideoReady] = useState(false)
   const handleIntroDone = useCallback(() => {
     setHeroReady(true)
-  }, [])
-
-  // Start video zoom slightly before hero content reveals, for seamless overlap
-  useEffect(() => {
-    const t = setTimeout(() => setVideoReady(true), HERO_REVEAL_MS)
-    return () => clearTimeout(t)
   }, [])
 
   const handleMouse = (e: React.MouseEvent<HTMLDivElement>) => {
