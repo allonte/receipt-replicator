@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useRef, useEffect, useState, useCallback } from "react"
-import { IntroAnimation, HERO_REVEAL_MS } from "@/components/intro-animation"
+import { IntroAnimation } from "@/components/intro-animation"
 import { AgentInterface } from "@/components/agent-interface"
 import { PixelIcon } from "@/components/pixel-icon"
 import { LiveAgentFeed, LiveAgentCounter } from "@/components/live-agent-feed"
@@ -80,15 +80,8 @@ export default function AllAndCoPage() {
   const [email, setEmail] = useState("")
   const [submitted, setSubmitted] = useState(false)
   const [heroReady, setHeroReady] = useState(false)
-  const [videoReady, setVideoReady] = useState(false)
   const handleIntroDone = useCallback(() => {
     setHeroReady(true)
-  }, [])
-
-  // Start video zoom slightly before hero content reveals, for seamless overlap
-  useEffect(() => {
-    const t = setTimeout(() => setVideoReady(true), HERO_REVEAL_MS)
-    return () => clearTimeout(t)
   }, [])
 
   const handleMouse = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -110,30 +103,13 @@ export default function AllAndCoPage() {
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="relative h-screen overflow-hidden">
 
-        {/* Video background — zooms in once intro is done */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        {/* Background image — subtle arc texture */}
+        <img
+          src="/images/arc.png"
+          alt=""
+          aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover z-0"
-          aria-label="Iridescent glass blocks background for the custom software landing page"
-          src="/allandco-marketing.mp4"
-          poster="/images/arc.png"
-          style={{
-            transform: videoReady ? "scale(1.05)" : "scale(0.85)",
-            transition: "transform 2s cubic-bezier(0.16, 1, 0.3, 1)",
-          }}
         />
-
-
-
-        {/* Progressive blur + light gradient rising from bottom */}
-        <div className="absolute inset-x-0 bottom-0 z-10 pointer-events-none" style={{ height: "65%", background: "linear-gradient(to top, #F5F4F0 0%, #F5F4F0 18%, rgba(245,244,240,0.85) 35%, rgba(245,244,240,0.5) 55%, rgba(245,244,240,0.15) 75%, transparent 100%)" }} />
-        {/* Backdrop blur layers — progressively lighter toward top */}
-        <div className="absolute inset-x-0 bottom-0 z-10 pointer-events-none" style={{ height: "20%", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", maskImage: "linear-gradient(to top, black 0%, transparent 100%)", WebkitMaskImage: "linear-gradient(to top, black 0%, transparent 100%)" }} />
-        <div className="absolute inset-x-0 bottom-0 z-10 pointer-events-none" style={{ height: "38%", backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(6px)", maskImage: "linear-gradient(to top, black 0%, transparent 100%)", WebkitMaskImage: "linear-gradient(to top, black 0%, transparent 100%)" }} />
-        <div className="absolute inset-x-0 bottom-0 z-10 pointer-events-none" style={{ height: "55%", backdropFilter: "blur(2px)", WebkitBackdropFilter: "blur(2px)", maskImage: "linear-gradient(to top, black 0%, transparent 100%)", WebkitMaskImage: "linear-gradient(to top, black 0%, transparent 100%)" }} />
 
         {/* Spacer so hero content doesn't sit under the fixed nav */}
         <div className="h-20" />
