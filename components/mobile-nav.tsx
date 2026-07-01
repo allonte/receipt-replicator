@@ -4,7 +4,7 @@ import { useState } from "react"
 
 const NAV_LINKS = [
   { label: "Platform",     href: "#platform" },
-  { label: "Agents",       href: "#agents" },
+  { label: "Systems",      href: "#agents" },
   { label: "Workflow",     href: "#workflow" },
   { label: "Integrations", href: "#integrations" },
   { label: "Pricing",      href: "#pricing" },
