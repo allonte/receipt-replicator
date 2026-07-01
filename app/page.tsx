@@ -260,12 +260,15 @@ export default function AllAndCoPage() {
                   <h3 className="text-lg font-light">all&amp;co Marketplace</h3>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-black/40 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><path d="M7 17 17 7M7 7h10v10"/></svg>
                 </div>
-                <p className="text-sm text-black/45 leading-relaxed">Kenya's biggest gadget marketplace — iPhones, PlayStation, laptops and accessories. Visit allco.co.ke.</p>
+                <p className="text-sm text-black/45 leading-relaxed mb-4">Kenya's biggest gadget marketplace — iPhones, PlayStation, laptops and accessories. Visit allco.co.ke.</p>
+                <div className="rounded-lg border border-black/[0.07] overflow-hidden">
+                  <img src="/images/preview-allco-marketplace.png" alt="all&amp;co Marketplace preview" className="w-full h-32 object-cover object-top" />
+                </div>
               </BentoCard>
             </a>
 
             <a
-              href="https://motion.allco.co.ke/"
+              href="https://studio.allco.co.ke/"
               target="_blank"
               rel="noopener noreferrer"
               className="col-span-12 md:col-span-4 block group"
@@ -275,10 +278,13 @@ export default function AllAndCoPage() {
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
                 </div>
                 <div className="flex items-center gap-2 mb-2">
-                  <h3 className="text-lg font-light">Motion — AI Video Generator</h3>
+                  <h3 className="text-lg font-light">Studio — AI Video Generator</h3>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-black/40 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><path d="M7 17 17 7M7 7h10v10"/></svg>
                 </div>
-                <p className="text-sm text-black/45 leading-relaxed">Preview motion.allco.co.ke — generate cinematic videos from a single prompt. Currently in preview.</p>
+                <p className="text-sm text-black/45 leading-relaxed mb-4">Preview studio.allco.co.ke — generate cinematic videos from a single prompt. Currently in preview.</p>
+                <div className="rounded-lg border border-black/[0.07] overflow-hidden">
+                  <img src="/images/preview-studio-allco.png" alt="Studio AI Video Generator preview" className="w-full h-32 object-cover object-top" />
+                </div>
               </BentoCard>
             </a>
           </div>
