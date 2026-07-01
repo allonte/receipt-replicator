@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useRef, useEffect, useState, useCallback } from "react"
-import { IntroAnimation, HERO_REVEAL_MS } from "@/components/intro-animation"
+import { IntroAnimation } from "@/components/intro-animation"
 import { AgentInterface } from "@/components/agent-interface"
 import { PixelIcon } from "@/components/pixel-icon"
 import { LiveAgentFeed, LiveAgentCounter } from "@/components/live-agent-feed"
