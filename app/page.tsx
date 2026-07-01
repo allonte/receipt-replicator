@@ -260,7 +260,10 @@ export default function AllAndCoPage() {
                   <h3 className="text-lg font-light">all&amp;co Marketplace</h3>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-black/40 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"><path d="M7 17 17 7M7 7h10v10"/></svg>
                 </div>
-                <p className="text-sm text-black/45 leading-relaxed">Kenya's biggest gadget marketplace — iPhones, PlayStation, laptops and accessories. Visit allco.co.ke.</p>
+                <p className="text-sm text-black/45 leading-relaxed mb-4">Kenya's biggest gadget marketplace — iPhones, PlayStation, laptops and accessories. Visit allco.co.ke.</p>
+                <div className="rounded-lg border border-black/[0.07] overflow-hidden">
+                  <img src="/images/preview-allco-marketplace.png" alt="all&amp;co Marketplace preview" className="w-full h-32 object-cover object-top" />
+                </div>
               </BentoCard>
             </a>
 
